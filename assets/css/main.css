@@ -5007,9 +5007,9 @@ div.breadcrumb ul li {
   display: inline-block;
   position: relative;
   font-size: 16px;
-  color: var(--global--color-secondary);
+  color: var(--global--color-secondary)!important;
   font-weight: 400;
-  padding: 0 40px 0 0;
+  padding: 0 40px 0 0!important;
 }
 div.breadcrumb ul li a {
   color: #000;
@@ -7021,5 +7021,38 @@ h2{
     .prop_img{
         margin-bottom: 0;
     }
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  display: none;
+}
+.form_sec{
+  margin-bottom: 70px;
+}
+.img_col{
+  height: 100%;
+}
+.img_col img{
+  height: 100%;
+}
+.form_col{
+  padding: 80px 90px 50px;
+  box-shadow: 9px 2px 22px 0px rgba(0,0,0,0.26);
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.form_col label{
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: #fff;
+  padding: 10px 8px;
+  font-size: 17px;
+}
+.form_col h2{
+  color: #000;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: start;
+  font-family: var(--global--font-family-secondary)!important;
 }
   /*last edit: 22-12-2023*/
